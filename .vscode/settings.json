@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "aws:/home/codespace/.vscode-remote/data/User/globalStorage/amazonwebservices.aws-toolkit-vscode/sam.schema.json": "file:///workspaces/nd9991-c2-Infrastructure-as-Code-v1/infra/servers.yml",
+        "https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json": "file:///workspaces/nd9991-c2-Infrastructure-as-Code-v1/infra/network.yml"
+    }
+}
