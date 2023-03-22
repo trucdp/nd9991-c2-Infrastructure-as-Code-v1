@@ -14,7 +14,7 @@ Deploy a High-Availability Web App using CloudFormation
 3. SSH Key
 
 ### Diagram
-![image info](./diagram/web-app-arch.png)
+![image info](./img/web-app-arch.png)
 
 ---
 ### Website Link
