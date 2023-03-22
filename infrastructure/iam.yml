@@ -2,14 +2,12 @@ Description: >
   TrucPD1 | Udacity 2023
   CloudFormation script to create a IAM policy.
 
-############################### Parameters ################################
 Parameters:
   EnvironmentName:
     Description: An environment name that will be prefixed to resource names
     Type: String
     Default: UdagramApp
 
-############################### Resources ################################
 Resources:
   IAMRoleWebApp:
     Type: "AWS::IAM::Role"
