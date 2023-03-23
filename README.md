@@ -18,8 +18,7 @@ Deploy a High-Availability Web App using CloudFormation
 
 ---
 ### Website Link
-http://udagram-34394902.us-east-1.elb.amazonaws.com/
-
+http://udagram-1356082084.us-east-1.elb.amazonaws.com/
 ---
 ### Screenshots of AWS Cloudformation Stacks
-https://able-manuscript-d3f.notion.site/Udacity-Project-2-Cloudformation-Stack-Screenshots-5354acb11f5d44c9bb67cf49b5cb6e9b
+![docs](.docs/sreenshots.pdf)

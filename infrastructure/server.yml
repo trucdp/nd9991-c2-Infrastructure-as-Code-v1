@@ -56,21 +56,21 @@ Resources:
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
-          sudo yum update -y
-          sudo yum install -y httpd
-          sudo systemctl start httpd
-          sudo systemctl enable httpd
-          sudo chkconfig httpd on
+          apt-get update -y
+          apt-get install unzip awscli -y
+          apt-get install apache2 -y
+          systemctl start apache2.service
+          systemctl enable apache2.service
           sudo rm /var/www/html/index.html
           sudo aws s3 cp s3://udacity-platform/udagram.zip /var/www/html
           sudo unzip /var/www/html/udagram.zip -d /var/www/html
-          sudo systemctl restart httpd
-      ImageId: ami-0022f774911c1d690
+          systemctl restart apache2.service
+      ImageId: ami-0263e4deb427da90e
       BlockDeviceMappings:
         - DeviceName: "/dev/sdk"
           Ebs:
             VolumeSize: "10"
-      InstanceType: t3.small
+      InstanceType: t3.medium
       SecurityGroups:
         - Ref: WebServerSecGroup
       IamInstanceProfile:
@@ -136,7 +136,6 @@ Resources:
         Fn::ImportValue:
           Fn::Sub: "${EnvironmentName}-VPCID"
 
-# ─── OUTPUTS ────────────────────────────────────────────────────────────────────
 Outputs:
   Website:
     Description: The Public DNS for the EC2 Instance

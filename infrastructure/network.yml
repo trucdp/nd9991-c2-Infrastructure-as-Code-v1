@@ -2,7 +2,6 @@ Description: >
   TrucPD1 | Udacity 2023
   CloudFormation script to create a network infrastructure.
 
-# ─── PARAMETERS ─────────────────────────────────────────────────────────────────
 Parameters:
   EnvironmentName:
     Description: An environment name that will be prefixed to resource names
@@ -202,7 +201,6 @@ Resources:
       RouteTableId: !Ref PrivateRouteTable2
       SubnetId: !Ref PrivateSubnet2
 
-# ─── OUTPUTS ────────────────────────────────────────────────────────────────────
 Outputs:
   VPC:
     Description: A reference to the created VPC
